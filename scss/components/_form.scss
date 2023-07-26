@@ -1,0 +1,19 @@
+.select{
+    padding: 5.5px 12px;
+    // 100% - label寬度 - margin-right寬度
+    width: calc(100% - 112px);
+    font-size: $fs-3;
+    border: 1px solid $gray-400;
+    color: $gray-700;
+    
+    // 下拉樣式取消
+    appearance: none;
+    // 變更下拉icon
+    background-image: url(https://lurl.cc/qsS3pb);
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+
+    @media (max-width:767px) {
+        width: calc(100% - 80px);
+    }
+}
