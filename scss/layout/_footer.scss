@@ -2,22 +2,34 @@
     padding-top: 48px;
     padding-bottom: 32px;
 
-    @media (max-width:992px) {
+    @include pad {
         padding-bottom: 40px;
     }
-    @media (max-width:767px) {
+
+    @include mobile {
         padding-top: 24px;
         padding-bottom: 24px;
     }
 }
+
 .footer-link {
     padding: 4px;
 }
-.footer-link, .footer-contact{
+
+.footer-link,
+.footer-contact {
     color: $white;
 
     &:hover {
         color: $gray-200;
+    }
+}
+
+.footer-contact-content {
+    padding-bottom: 32px;
+    border-bottom: 1px solid $white;
+    @include pad {
+        padding-bottom: 24px;
     }
 }
 
@@ -30,13 +42,17 @@
         opacity: 0.8;
     }
 
-    @media (max-width:992px) {
+    @include pad {
         width: 40px;
         height: 40px;
     }
 
-    @media (max-width:767px) {
+    @include mobile {
         width: 24px;
         height: 24px;
     }
+}
+
+.footer-border {
+    border-bottom: 1px solid $white;
 }

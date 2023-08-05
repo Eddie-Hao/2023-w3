@@ -27,7 +27,7 @@
     width: calc(100% / 12 * 8);
 }
 
-@media (max-width: 992px) {
+@include pad {
     .col-6-md{
         width: calc(100% / 12 * 6);
     }
@@ -42,7 +42,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@include mobile {
     .col-12-sm {
         width: 100%;
     }

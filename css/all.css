@@ -267,6 +267,8 @@ a {
 .form-content {
   width: 100%;
   padding: 6px 12px;
+  background-color: transparent;
+  border: 1px solid #000;
 }
 .form-content::-moz-placeholder {
   color: #000;
@@ -732,11 +734,23 @@ a {
   padding: 4px;
 }
 
-.footer-link, .footer-contact {
+.footer-link,
+.footer-contact {
   color: #fff;
 }
-.footer-link:hover, .footer-contact:hover {
+.footer-link:hover,
+.footer-contact:hover {
   color: #DEE2E6;
+}
+
+.footer-contact-content {
+  padding-bottom: 32px;
+  border-bottom: 1px solid #fff;
+}
+@media (max-width: 992px) {
+  .footer-contact-content {
+    padding-bottom: 24px;
+  }
 }
 
 .footer-social-link {
@@ -760,6 +774,10 @@ a {
   }
 }
 
+.footer-border {
+  border-bottom: 1px solid #fff;
+}
+
 .hero {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
   background-size: cover;
@@ -773,13 +791,11 @@ a {
   }
 }
 .hero-content {
-  padding-top: 296px;
-  padding-bottom: 295px;
+  height: 787px;
 }
 @media (max-width: 767px) {
   .hero-content {
-    padding-top: 145px;
-    padding-bottom: 145px;
+    height: 396px;
   }
 }
 .hero-cta {
@@ -1097,14 +1113,14 @@ a {
   padding-bottom: 80px;
   text-align: center;
 }
-@media (max-width: 772px) {
+@media (max-width: 767px) {
   .product-content {
     padding-top: 40px;
     padding-bottom: 64px;
   }
 }
 
-.palette {
+F .palette {
   width: 24px;
   height: 24px;
   border-radius: 4px;

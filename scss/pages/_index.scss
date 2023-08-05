@@ -4,18 +4,16 @@
     background-position: left top;
     background-repeat: no-repeat;
 
-    @media (max-width:767px) {
+    @include mobile {
         background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
         background-position: left center;
     }
-
+    
     &-content {
-        padding-top: 296px;
-        padding-bottom: 295px;
+        height: 787px;
 
-        @media (max-width:767px) {
-            padding-top: 145px;
-            padding-bottom: 145px;
+        @include mobile {
+            height: 396px;
         }
     }
 
@@ -68,7 +66,7 @@
             color: $primary-darkest;
         }
 
-        @media (max-width:992px) {
+        @include pad {
             width: 100%;
         }
     }
@@ -93,7 +91,7 @@
         &-doubleA {
             background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true);
 
-            @media (max-width:767px) {
+            @include mobile {
                 background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true);
             }
         }
@@ -101,7 +99,7 @@
         &-youth {
             background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true);
 
-            @media (max-width:767px) {
+            @include mobile {
                 background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true);
             }
         }
@@ -130,11 +128,11 @@
     padding-top: 80px;
     padding-bottom: 96px;
 
-    @media (max-width:992px) {
+    @include pad {
         padding-bottom: 80px;
     }
 
-    @media (max-width:767px) {
+    @include mobile {
         padding-top: 40px;
         padding-bottom: 40px;
     }

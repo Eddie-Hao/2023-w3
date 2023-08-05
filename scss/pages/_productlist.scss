@@ -1,4 +1,4 @@
-@media (max-width: 1320px) {
+@include pc {
     .product-menu {
         padding-left: 0;
         padding-right: 0;
@@ -32,13 +32,13 @@
         border-bottom: 8px solid $primary;
     }
 
-    @media (max-width: 992px) {
+    @include pad {
         height: 68px;
         padding-top: 16px;
         padding-bottom: 16px;
     }
 
-    @media (max-width: 767px) {
+    @include mobile {
         height: 56px;
     }
 }
@@ -67,7 +67,7 @@
         }
     }
 
-    @media (max-width: 767px) {
+    @include mobile {
         height: 136px;
 
         &-glasses {
@@ -85,12 +85,12 @@
     padding-bottom: 80px;
     text-align: center;
 
-    @media (max-width: 772px) {
+    @include mobile {
         padding-top: 40px;
         padding-bottom: 64px;
     }
 }
-
+F
 .palette {
     width: 24px;
     height: 24px;

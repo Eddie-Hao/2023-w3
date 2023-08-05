@@ -2,11 +2,11 @@
     padding-top: 24px;
     padding-bottom: 80px;
 
-    @media (max-width: 992px) {
+    @include pad {
         padding-top: 8px;
     }
 
-    @media (max-width: 767px) {
+    @include mobile {
         padding-top: 16px;
         padding-bottom: 64px;
     }
@@ -17,12 +17,12 @@
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width:767px) {
+    @include mobile {
         width: 100%;
     }
 
     &-item {
-        @media (max-width:767px) {
+        @include mobile {
             width: 25%;
         }
     }
@@ -37,21 +37,21 @@
             color: $gray-200;
         }
 
-        @media (max-width:767px) {
+        @include mobile {
             text-align: center;
         }
     }
 
     &-icon {
 
-        @media (max-width:767px) {
+        @include mobile {
             display: none;
         }
     }
 }
 
 .tag {
-    @media (max-width:767px) {
+    @include mobile {
         display: none;
     }
 
@@ -66,7 +66,7 @@
 
 //連結到網頁外部
 .blog-outer {
-    @media (max-width:767px) {
+    @include mobile {
         display: none;
     }
 

@@ -34,7 +34,7 @@
     align-items: stretch;
 }
 
-@media (max-width:992px) {
+@include pad {
     .flex-row-md {
         flex-direction: row;
     }
@@ -55,7 +55,7 @@
     }
 }
 
-@media (max-width:767px) {
+@include mobile {
     .d-flex-sm {
         display: flex;
     }

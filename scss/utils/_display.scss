@@ -5,7 +5,7 @@
 .d-block{
     display: block;
 }
-@media (max-width: 767px) {
+@include mobile {
     .d-none-sm{
         display: none;
     }
